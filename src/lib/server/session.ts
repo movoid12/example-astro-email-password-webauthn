@@ -63,7 +63,11 @@ export function invalidateUserSessions(userId: number): void {
 	db.execute("DELETE FROM session WHERE user_id = ?", [userId]);
 }
 
-export function setSessionTokenCookie(context: APIContext, token: string, expiresAt: Date): void {
+export function setSessionTokenCookie(
+	context: APIContext<Record<string, any>, Record<string, string | undefined>>,
+	token: string,
+	expiresAt: Date
+): void {
 	context.cookies.set("session", token, {
 		httpOnly: true,
 		path: "/",
@@ -73,7 +77,9 @@ export function setSessionTokenCookie(context: APIContext, token: string, expire
 	});
 }
 
-export function deleteSessionTokenCookie(context: APIContext): void {
+export function deleteSessionTokenCookie(
+	context: APIContext<Record<string, any>, Record<string, string | undefined>>
+): void {
 	context.cookies.set("session", "", {
 		httpOnly: true,
 		path: "/",

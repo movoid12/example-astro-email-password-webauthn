@@ -13,6 +13,7 @@
 	"dependencies": {
 		"@astrojs/check": "^0.9.5",
 		"@astrojs/vercel": "^9.0.0",
+		"@libsql/client": "^0.15.15",
 		"@node-rs/argon2": "^2.0.2",
 		"@oslojs/binary": "^1.0.0",
 		"@oslojs/crypto": "^1.0.1",

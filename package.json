@@ -23,12 +23,12 @@
 		"@pilcrowjs/db-query": "^0.0.2",
 		"@pilcrowjs/object-parser": "^0.0.3",
 		"astro": "^4.14.3",
-		"better-sqlite3": "^11.2.0",
+		"better-sqlite3": "^12.4.1",
 		"typescript": "^5.5.4",
 		"uqr": "^0.1.2"
 	},
 	"devDependencies": {
-		"@types/better-sqlite3": "^7.6.11",
+		"@types/better-sqlite3": "^7.6.13",
 		"prettier": "^3.3.3",
 		"prettier-plugin-astro": "^0.14.1"
 	}
